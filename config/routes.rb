@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  root to: "dm_sending#new"
+  root to: "users#new"
 
+  resources :users, only: [:index, :new, :create]
 end
